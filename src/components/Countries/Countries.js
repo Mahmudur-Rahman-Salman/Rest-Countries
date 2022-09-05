@@ -19,7 +19,7 @@ const Countries = () => {
             }
             <div className='row row-cols-1 row-cols-md-3 g-4 m-5'>
                 {
-                    countries.map(country => <Country country={country}></Country>)
+                    countries.map(country => <Country key={country.ccn3} country={country}></Country>)
                 }
             </div>
         </div>
